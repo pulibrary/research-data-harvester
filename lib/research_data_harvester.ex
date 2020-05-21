@@ -22,12 +22,7 @@ defmodule ResearchDataHarvester do
 
   def get_dataverse_records(base_url, set) do
     OaiStream.oai_pages(base_url, set)
-    |> Enum.map(&parse_records/1)
-    |> Enum.reduce([], &append_records/2)
-  end
-
-  def append_records(%{records: records}, acc) do
-    acc ++ records
+    |> Enum.flat_map(&parse_records/1)
   end
 
   def parse_records(body) do
@@ -36,8 +31,8 @@ defmodule ResearchDataHarvester do
       records: [
         ~x"//ListRecords/record"l,
         identifier: ~x"//header/identifier/text()"
-      ],
-      resumptionToken: ~x"//resumptionToken/text()"
+      ]
     )
+    |> Map.get(:records)
   end
 end
