@@ -21,8 +21,25 @@ defmodule ResearchDataHarvester do
 
   def get_dataverse_records(url, set) do
     set_url = "#{url}?verb=ListRecords&set=#{set}&metadataPrefix=oai_datacite"
-    {:ok, %{ body: body } } = HTTPoison.get!(url)
-    body |> xmap(records: [~x"//ListRecords/record"l, identifier: ~x"//header/identifier/text()"])
-    |> Map.get(:records)
+    {:ok, %{ body: body } } = HTTPoison.get!(set_url)
+
+    body
+    |> xmap(
+      records: [
+        ~x"//ListRecords/record"l,
+        identifier: ~x"//header/identifier/text()"
+      ],
+      resumptionToken: ~x"//resumptionToken/text()"
+    )
+    |> extract_records
   end
+
+  def extract_records(map=%{records: records, resumptionToken: token}) do
+    records
+  end
+
+  def extract_records(map=%{records: records}) do
+    Map.append(records)
+  end
+
 end
