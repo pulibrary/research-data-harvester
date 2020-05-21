@@ -6,8 +6,10 @@ defmodule ResearchDataHarvesterTest do
     test "returns parsed json of Princeton University records" do
       url = "https://datadryad.org/api/v2/datasets"
       body = File.read!("test/fixtures/dryad_records_page_1.txt")
+
       get_mock = fn url, _params, _headers ->
-        {:ok,
+        {
+          :ok,
           %HTTPoison.Response{
             body: body,
             status_code: 200

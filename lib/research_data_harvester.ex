@@ -10,8 +10,8 @@ defmodule ResearchDataHarvester do
   """
   def get_dryad_records do
     url = "https://datadryad.org/api/v2/datasets"
-    headers = ["Accept": "application/json", "Content-Type": "application/json"]
-    options = [ssl: [{:versions, [:'tlsv1.2']}]]
+    headers = [Accept: "application/json", "Content-Type": "application/json"]
+    options = [ssl: [{:versions, [:"tlsv1.2"]}]]
     {:ok, response} = HTTPoison.get!(url, headers, options)
     Poison.decode!(response.body)
     # TODO: pagination; _links contains next page, etc.
