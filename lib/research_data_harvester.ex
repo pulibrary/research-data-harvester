@@ -16,4 +16,7 @@ defmodule ResearchDataHarvester do
     Poison.decode!(response.body)
     # TODO: pagination; _links contains next page, etc.
   end
+
+  def get_dataverse_records(url, set) do
+  end
 end

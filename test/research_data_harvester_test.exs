@@ -27,4 +27,13 @@ defmodule ResearchDataHarvesterTest do
       assert json["total"] == 33511
     end
   end
+
+  describe "#get_dataverse_records" do
+    test "returns a data struct for each record" do
+      url = "https://dataverse.harvard.edu/oai"
+      set = "Princeton_Authored_Datasets"
+
+      output = ResearchDataHarvester.get_dataverse_records(url, set)
+    end
+  end
 end
