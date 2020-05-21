@@ -61,7 +61,8 @@ defmodule ResearchDataHarvesterTest do
         end
 
       # get 2 pages
-      assert length(output) == 200
+      assert length(output) == 144
+      assert(hd(output).identifier) == "doi:10.7910/DVN/0SQFGQ"
     end
   end
 end
