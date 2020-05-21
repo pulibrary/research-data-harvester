@@ -32,8 +32,24 @@ defmodule ResearchDataHarvesterTest do
     test "returns a data struct for each record" do
       url = "https://dataverse.harvard.edu/oai"
       set = "Princeton_Authored_Datasets"
+      body = File.read!("test/fixtures/dataverse/dataverse_page_1.xml")
 
-      output = ResearchDataHarvester.get_dataverse_records(url, set)
+      get_mock = fn url ->
+        {
+          :ok,
+          %HTTPoison.Response{
+            body: body,
+            status_code: 200
+          }
+        }
+      end
+
+      output =
+        Mock.with_mock HTTPoison, get!: get_mock do
+          ResearchDataHarvester.get_dataverse_records(url, set)
+        end
+
+      assert length(output) > 0
     end
   end
 end

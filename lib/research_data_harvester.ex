@@ -1,3 +1,5 @@
+import SweetXml
+
 defmodule ResearchDataHarvester do
   @moduledoc """
   Documentation for ResearchDataHarvester.
@@ -18,5 +20,9 @@ defmodule ResearchDataHarvester do
   end
 
   def get_dataverse_records(url, set) do
+    set_url = "#{url}?verb=ListRecords&set=#{set}&metadataPrefix=oai_datacite"
+    {:ok, %{ body: body } } = HTTPoison.get!(url)
+    body |> xmap(records: [~x"//ListRecords/record"l, identifier: ~x"//header/identifier/text()"])
+    |> Map.get(:records)
   end
 end
