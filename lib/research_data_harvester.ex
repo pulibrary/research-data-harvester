@@ -4,15 +4,16 @@ defmodule ResearchDataHarvester do
   """
 
   @doc """
-  Hello world.
+  Use the Dryad REST API to fetch all their dataset records and filter them for PU researchers
 
-  ## Examples
-
-      iex> ResearchDataHarvester.hello()
-      :world
-
+  See https://datadryad.org/api/v2/docs/#/default/get_datasets
   """
-  def hello do
-    :world
+  def get_dryad_records do
+    url = "https://datadryad.org/api/v2/datasets"
+    headers = ["Accept": "application/json", "Content-Type": "application/json"]
+    options = [ssl: [{:versions, [:'tlsv1.2']}]]
+    {:ok, response} = HTTPoison.get!(url, headers, options)
+    Poison.decode!(response.body)
+    # TODO: pagination; _links contains next page, etc.
   end
 end
