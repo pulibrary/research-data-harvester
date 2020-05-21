@@ -21,7 +21,7 @@ defmodule ResearchDataHarvester do
   end
 
   def get_dataverse_records(base_url, set) do
-    OaiStream.oai_pages(base_url, set)
+    OaiStream.oai_pages(base_url: base_url, set: set, metadata_prefix: "oai_datacite")
     |> Enum.flat_map(&parse_records/1)
   end
 
