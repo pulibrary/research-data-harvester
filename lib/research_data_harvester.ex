@@ -1,5 +1,4 @@
 import SweetXml
-require IEx
 
 defmodule ResearchDataHarvester do
   @moduledoc """
