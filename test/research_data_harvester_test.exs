@@ -14,6 +14,17 @@ defmodule ResearchDataHarvesterTest do
       }
     end
 
+    def mock_dryad_records("https://datadryad.org/api/v2/datasets?page=3355", _headers, _options) do
+      body = File.read!("test/fixtures/dryad/dryad_page_3355.json")
+      {
+        :ok,
+        %HTTPoison.Response{
+          body: body,
+          status_code: 200
+        }
+      }
+    end
+
     test "returns parsed json of Princeton University records" do
 
       output =
@@ -21,7 +32,7 @@ defmodule ResearchDataHarvesterTest do
           ResearchDataHarvester.get_dryad_records()
         end
 
-      assert length(output) == 10
+      assert length(output) == 12
       assert(hd(output).identifier) == "doi:10.5061/dryad.7rh4625"
     end
   end

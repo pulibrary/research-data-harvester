@@ -1,0 +1,167 @@
+{
+  "_links": {
+    "self": {
+      "href": "/api/v2/datasets?page=3355"
+    },
+    "first": {
+      "href": "/api/v2/datasets"
+    },
+    "last": {
+      "href": "/api/v2/datasets?page=3355"
+    },
+    "prev": {
+      "href": "/api/v2/datasets?page=3354"
+    }
+  },
+  "count": 2,
+  "total": 33542,
+  "_embedded": {
+    "stash:datasets": [
+      {
+        "_links": {
+          "self": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.p5hqbzkmj"
+          },
+          "stash:versions": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.p5hqbzkmj/versions"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/66525"
+          },
+          "stash:download": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.p5hqbzkmj/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/CDL-Dryad/stash/blob/master/stash_api/link-relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "identifier": "doi:10.5061/dryad.p5hqbzkmj",
+        "id": 47228,
+        "storage_size": 121338,
+        "title": "Environmental and Salmo trutta complex aboundance data in the Tiber River basin (central Italy)",
+        "authors": [
+          {
+            "firstName": "Antonella",
+            "lastName": "Carosi",
+            "email": "antonella.carosi@unipg.it",
+            "affiliation": "University of Perugia",
+            "orcid": "0000-0003-0513-7287"
+          },
+          {
+            "firstName": "Lucia",
+            "lastName": "Ghetti",
+            "email": "lghetti@regione.umbria.it",
+            "affiliation": "Wildlife planning Service Umbria Region (Italy)"
+          },
+          {
+            "firstName": "Rosalba",
+            "lastName": "Padula",
+            "email": "rpadula@arpa.umbria.it",
+            "affiliation": "Centre for Climate Change and Biodiversity in Lakes and Wetlands of Arpa Umbria, Perugia (Italy)"
+          },
+          {
+            "firstName": "Massimo",
+            "lastName": "Lorenzoni",
+            "email": "massimo.lorenzoni@unipg.it",
+            "affiliation": "University of Perugia"
+          }
+        ],
+        "abstract": "<p>Salmonids inhabiting Mediterranean rivers are of particular concern for biodiversity conservation, as they are threatened by various stressors, including habitat alterations, overfishing, climate change, and introgressive hybridisation with alien species. In the Tiber River basin (Central Italy), genetic introgression phenomena of the native<i> Salmo cettii</i> with the non-native <i>Salmo trutta</i> hinder the separate analysis of the two species, which are both included in the <i>S. trutta</i> complex. Little is known about the factors currently limiting the trout populations in this area, particularly with respect to climate change. With the intention of filling this gap, the aims of the current study were to: i) quantify changes in the climate, and ii) analyse the distribution, status, and ecology of trout populations, in the context of changing abiotic conditions over the last decades. Fish stock assessments were carried out by electrofishing during three census periods (1998-2004, 2005-2011, and 2012-2018) at 129 sites. The trend over time of meteorological parameters provided evidence for increased air temperature and decreased rainfall. Multivariate analysis of trout densities and environmental data highlighted the close direct correlation of trout abundance with water quality, altitude, and current speed. Climate-induced effects observed over time in the sites where trout were sampled have not yet led to local extinctions or distribution shifts, indicating a marked resilience of trout, probably due to the buffering effect of intrinsic population dynamics. Decreasing body conditions over time and unbalanced age structures support the hypothesis that variations in hydraulic regime and water temperature could overcome these compensatory effects, which may lead to a severe decline in trout populations in the near future. In a climate change context, habitat availability plays a key role in the distribution of cold-water species, which often do not have the possibility to move upstream to reach their thermal optimum because of water scarcity in the upper river stretches.</p>\r\n",
+        "keywords": [
+          "salmonids"
+        ],
+        "versionNumber": 2,
+        "versionStatus": "submitted",
+        "curationStatus": "Embargoed",
+        "sharingLink": "https://datadryad.org/stash/share/WiG8ZLtZp2ftOexmosv811RUiTExEh6eQ1OI1JvSNSk",
+        "userId": 56574,
+        "embargoEndDate": "2021-05-22"
+      },
+      {
+        "_links": {
+          "self": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.wdbrv15kk"
+          },
+          "stash:versions": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.wdbrv15kk/versions"
+          },
+          "stash:version": {
+            "href": "/api/v2/versions/66499"
+          },
+          "stash:download": {
+            "href": "/api/v2/datasets/doi%3A10.5061%2Fdryad.wdbrv15kk/download"
+          },
+          "curies": [
+            {
+              "name": "stash",
+              "href": "https://github.com/CDL-Dryad/stash/blob/master/stash_api/link-relations.md#{rel}",
+              "templated": "true"
+            }
+          ]
+        },
+        "identifier": "doi:10.5061/dryad.wdbrv15kk",
+        "id": 47234,
+        "storage_size": 74898,
+        "title": "Data from: Leaf-footed bugs possess multiple hidden contrasting color signals, but only one is associated with increased body size",
+        "authors": [
+          {
+            "firstName": "Zachary",
+            "lastName": "Emberts",
+            "email": "emberts@ufl.edu",
+            "affiliation": "University of Florida",
+            "orcid": "0000-0002-7949-0254"
+          },
+          {
+            "firstName": "Christine",
+            "lastName": "Miller",
+            "email": "",
+            "affiliation": "University of Florida"
+          },
+          {
+            "firstName": "Chelsea",
+            "lastName": "Skojec",
+            "email": "",
+            "affiliation": "University of Florida"
+          },
+          {
+            "firstName": "Rachel",
+            "lastName": "Shepherd",
+            "email": "",
+            "affiliation": "University of Florida"
+          },
+          {
+            "firstName": "Colette",
+            "lastName": "St. Mary",
+            "email": "",
+            "affiliation": "University of Florida"
+          }
+        ],
+        "abstract": "<p>Anti-predatory displays that incorporate hidden contrasting coloration are found in a variety of different animals. These displays are seen in organisms that have drab coloration at rest, but when disturbed reveal conspicuous coloration. Examples include the bright abdomens of mountain katydids and the colorful underwings of hawk moths. Such hidden displays can function as secondary defenses, enabling evasion of a pursuant predator. To begin to understand why some species have these displays while others do not, we conducted phylogenetic comparative analyses to investigate factors associated with the evolution of hidden contrasting coloration in leaf-footed bugs. First, we investigated whether hidden contrasting coloration was associated with body size because these displays are considered to be more effective in larger organisms. We then investigated whether hidden contrasting coloration was associated with an alternative anti-predatory defense, in this case rapid autotomy. We found that leaf-footed bugs with hidden contrasting coloration tended to autotomize more slowly, but this result was not statistically significant. We also found that the presence of a body size association was dependent upon the form of the hidden color display. Leaf-footed bugs that reveal red/orange coloration were the same size, on average, as species without a hidden color display. However, species that reveal white patches on a black background were significantly larger than species without a hidden color display. These results highlight the diversity of forms that hidden contrasting color signal can take, upon which selection may act differently.</p>\r\n",
+        "funders": [
+          {
+            "organization": "National Science Foundation",
+            "awardNumber": "IOS-1553100"
+          },
+          {
+            "organization": "National Science Foundation",
+            "awardNumber": "DBI-1907051"
+          }
+        ],
+        "keywords": [
+          "coloration",
+          "leaf-footed bugs"
+        ],
+        "versionNumber": 2,
+        "versionStatus": "submitted",
+        "curationStatus": "Embargoed",
+        "sharingLink": "https://datadryad.org/stash/share/Cfh1IiRLlt7w_mQfW-5eUU9qIu_r2QK_5VyJmhgdmbU",
+        "userId": 53329,
+        "embargoEndDate": "2021-05-21"
+      }
+    ]
+  }
+}
