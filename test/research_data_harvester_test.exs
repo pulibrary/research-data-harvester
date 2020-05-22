@@ -21,9 +21,8 @@ defmodule ResearchDataHarvesterTest do
           ResearchDataHarvester.get_dryad_records()
         end
 
-      assert Map.keys(output) == ["_embedded", "_links", "count", "total"]
-      assert output["count"] == 10
-      assert output["total"] == 33511
+      assert length(output) == 10
+      assert(hd(output).identifier) == "doi:10.5061/dryad.7rh4625"
     end
   end
 

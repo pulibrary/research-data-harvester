@@ -14,9 +14,16 @@ defmodule ResearchDataHarvester do
     url = "https://datadryad.org/api/v2/datasets"
     headers = [Accept: "application/json", "Content-Type": "application/json"]
     options = [ssl: [{:versions, [:"tlsv1.2"]}]]
-    {:ok, response} = HTTPoison.get!(url, headers, options)
-    Poison.decode!(response.body)
+    {:ok, %{ body: body } } = HTTPoison.get!(url, headers, options)
+    body
+    |> Poison.decode!
+    |> Map.fetch!("_embedded")
+    |> Map.fetch!("stash:datasets")
+    |> Enum.map(fn record -> %{ identifier: record["identifier"] } end)
     # TODO: pagination; _links contains next page, etc.
+    # Map.keys(json) == ["_embedded", "_links", "count", "total"]
+    # json["count"] == 10
+    # json["total"] == 33511
   end
 
   def get_dataverse_records(base_url, set) do
