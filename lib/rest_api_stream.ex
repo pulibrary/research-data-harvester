@@ -8,11 +8,12 @@ defmodule RestApiStream do
     )
   end
 
-  # If the resumption token is nil there's no more pages to get.
+  # If the path is nil there are no more pages to get.
   def get_page({ _base_url, _path = nil}) do
     { :halt, [] }
   end
 
+  # return a page of json at a time, caller should pull records
   def get_page({ base_url, path }) do
     page_url = "#{base_url}#{path}"
     headers = [Accept: "application/json", "Content-Type": "application/json"]
@@ -24,9 +25,6 @@ defmodule RestApiStream do
     |> Map.fetch!("_links")
     |> Map.get("next", %{})
     |> Map.get("href", nil)
-    results = json
-    |> Map.fetch!("_embedded")
-    |> Map.fetch!("stash:datasets")
-    { results, { base_url, next_path } }
+    { [json], { base_url, next_path } }
   end
 end
