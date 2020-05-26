@@ -15,9 +15,7 @@ defmodule ZenodoApiStream do
 
   # return a page of json at a time, caller should pull records
   def get_page({ page_url }) do
-    headers = [Accept: "application/json", "Content-Type": "application/json"]
-    options = [ssl: [{:versions, [:"tlsv1.2"]}]]
-    {:ok, %{ body: body } } = HTTPoison.get!(page_url, headers, options)
+    {:ok, %{ body: body } } = HTTPoison.get(page_url)
     json = body
     |> Poison.decode!
     next_path = json

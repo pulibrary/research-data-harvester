@@ -38,7 +38,7 @@ defmodule ResearchDataHarvesterTest do
   end
 
   describe "#get_zenodo_records" do
-    def mock_zenodo_records("https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton", _headers, _options) do
+    def mock_zenodo_records("https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton") do
       body = File.read!("test/fixtures/zenodo/zenodo_page_1.json")
       {
         :ok,
@@ -49,7 +49,7 @@ defmodule ResearchDataHarvesterTest do
       }
     end
 
-    def mock_zenodo_records("https://zenodo.org/api/records/?sort=bestmatch&q=creators.affiliation%3APrinceton&page=38&size=10", _headers, _options) do
+    def mock_zenodo_records("https://zenodo.org/api/records/?sort=bestmatch&q=creators.affiliation%3APrinceton&page=38&size=10") do
       body = File.read!("test/fixtures/zenodo/zenodo_page_38.json")
       {
         :ok,
@@ -63,7 +63,7 @@ defmodule ResearchDataHarvesterTest do
     test "returns parsed json of Princeton University records" do
 
       output =
-        Mock.with_mock HTTPoison, get!: &mock_zenodo_records/3 do
+        Mock.with_mock HTTPoison, get: &mock_zenodo_records/1 do
           ResearchDataHarvester.get_zenodo_records()
         end
 
