@@ -3,28 +3,37 @@ defmodule ResearchDataHarvesterTest do
   import Mock
 
   describe "#get_dryad_records" do
-    test "returns parsed json of Princeton University records" do
-      url = "https://datadryad.org/api/v2/datasets"
-      body = File.read!("test/fixtures/dryad_records_page_1.txt")
-
-      get_mock = fn url, _params, _headers ->
-        {
-          :ok,
-          %HTTPoison.Response{
-            body: body,
-            status_code: 200
-          }
+    def mock_dryad_records("https://datadryad.org/api/v2/datasets", _headers, _options) do
+      body = File.read!("test/fixtures/dryad/dryad_page_1.json")
+      {
+        :ok,
+        %HTTPoison.Response{
+          body: body,
+          status_code: 200
         }
-      end
+      }
+    end
 
-      json =
-        Mock.with_mock HTTPoison, get!: get_mock do
+    def mock_dryad_records("https://datadryad.org/api/v2/datasets?page=3355", _headers, _options) do
+      body = File.read!("test/fixtures/dryad/dryad_page_3355.json")
+      {
+        :ok,
+        %HTTPoison.Response{
+          body: body,
+          status_code: 200
+        }
+      }
+    end
+
+    test "returns parsed json of Princeton University records" do
+
+      output =
+        Mock.with_mock HTTPoison, get!: &mock_dryad_records/3 do
           ResearchDataHarvester.get_dryad_records()
         end
 
-      assert Map.keys(json) == ["_embedded", "_links", "count", "total"]
-      assert json["count"] == 10
-      assert json["total"] == 33511
+      assert length(output) == 12
+      assert(hd(output).identifier) == "doi:10.5061/dryad.7rh4625"
     end
   end
 

@@ -11,20 +11,25 @@ defmodule ResearchDataHarvester do
   See https://datadryad.org/api/v2/docs/#/default/get_datasets
   """
   def get_dryad_records do
-    url = "https://datadryad.org/api/v2/datasets"
-    headers = [Accept: "application/json", "Content-Type": "application/json"]
-    options = [ssl: [{:versions, [:"tlsv1.2"]}]]
-    {:ok, response} = HTTPoison.get!(url, headers, options)
-    Poison.decode!(response.body)
-    # TODO: pagination; _links contains next page, etc.
+    base_url = "https://datadryad.org"
+    path = "/api/v2/datasets"
+    RestApiStream.response_pages(base_url: base_url, path: path)
+    |> Enum.flat_map(&parse_dryad_records/1)
+  end
+
+  def parse_dryad_records(body) do
+    body
+    |> Map.fetch!("_embedded")
+    |> Map.fetch!("stash:datasets")
+    |> Enum.map(fn record -> %{ identifier: record["identifier"] } end)
   end
 
   def get_dataverse_records(base_url, set) do
     OaiStream.oai_pages(base_url: base_url, set: set, metadata_prefix: "oai_datacite")
-    |> Enum.flat_map(&parse_records/1)
+    |> Enum.flat_map(&parse_dataverse_records/1)
   end
 
-  def parse_records(body) do
+  def parse_dataverse_records(body) do
     body
     |> xmap(
       records: [
