@@ -26,15 +26,13 @@ defmodule ResearchDataHarvester do
 
   def get_zenodo_fields do
     search_url = "https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton"
-    z_stream = ZenodoApiStream.response_pages(search_url: search_url)
-    field_list =
-      z_stream
-      |> Enum.flat_map_reduce([], &accumulate_fields/2)
+    ZenodoApiStream.response_pages(search_url: search_url)
+    |> Enum.reduce([], &accumulate_fields/2)
+    |> Enum.uniq
   end
 
   def accumulate_fields(map, fields_list) do
-    hits = get_hits(map)
-    fields = hits
+    get_hits(map)
     |> Enum.reduce(fields_list, fn m, acc -> acc ++ Map.keys(m) end)
   end
 

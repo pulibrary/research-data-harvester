@@ -76,7 +76,7 @@ defmodule ResearchDataHarvesterTest do
           ResearchDataHarvester.get_zenodo_fields()
         end
 
-      assert output == ["doi", "license", "keywords"]
+      assert output == ["conceptdoi", "conceptrecid", "created", "doi", "files", "id", "links", "metadata", "owners", "revision", "stats", "updated"]
     end
   end
 
