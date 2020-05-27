@@ -1,0 +1,1695 @@
+{
+  "aggregations": {
+    "access_right": {
+      "buckets": [
+        {
+          "doc_count": 372,
+          "key": "open"
+        },
+        {
+          "doc_count": 4,
+          "key": "closed"
+        },
+        {
+          "doc_count": 3,
+          "key": "restricted"
+        },
+        {
+          "doc_count": 1,
+          "key": "embargoed"
+        }
+      ],
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0
+    },
+    "communities": {
+      "buckets": [
+        {
+          "doc_count": 19,
+          "key": "zenodo"
+        },
+        {
+          "doc_count": 13,
+          "key": "lsst-dm"
+        },
+        {
+          "doc_count": 11,
+          "key": "cmwrxvi"
+        },
+        {
+          "doc_count": 11,
+          "key": "dtuproceedings"
+        },
+        {
+          "doc_count": 7,
+          "key": "ecfunded"
+        },
+        {
+          "doc_count": 7,
+          "key": "plasmapy"
+        },
+        {
+          "doc_count": 4,
+          "key": "astronomy-general"
+        },
+        {
+          "doc_count": 4,
+          "key": "scientific_viz"
+        },
+        {
+          "doc_count": 3,
+          "key": "climatechange"
+        },
+        {
+          "doc_count": 3,
+          "key": "oceanbiogeochemistry"
+        }
+      ],
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 70
+    },
+    "file_type": {
+      "buckets": [
+        {
+          "doc_count": 157,
+          "key": "zip"
+        },
+        {
+          "doc_count": 134,
+          "key": "pdf"
+        },
+        {
+          "doc_count": 22,
+          "key": "gz"
+        },
+        {
+          "doc_count": 14,
+          "key": "nc"
+        },
+        {
+          "doc_count": 13,
+          "key": "txt"
+        },
+        {
+          "doc_count": 9,
+          "key": "csv"
+        },
+        {
+          "doc_count": 9,
+          "key": "xlsx"
+        },
+        {
+          "doc_count": 8,
+          "key": "h5"
+        },
+        {
+          "doc_count": 6,
+          "key": ""
+        },
+        {
+          "doc_count": 6,
+          "key": "tar"
+        }
+      ],
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 65
+    },
+    "keywords": {
+      "buckets": [
+        {
+          "doc_count": 11,
+          "key": "Astronomy"
+        },
+        {
+          "doc_count": 7,
+          "key": "LSST"
+        },
+        {
+          "doc_count": 6,
+          "key": "climate change"
+        },
+        {
+          "doc_count": 6,
+          "key": "plasma physics"
+        },
+        {
+          "doc_count": 5,
+          "key": "Data analysis"
+        },
+        {
+          "doc_count": 4,
+          "key": "Astrophysics"
+        },
+        {
+          "doc_count": 4,
+          "key": "Digital Humanities"
+        },
+        {
+          "doc_count": 4,
+          "key": "Gaussian process"
+        },
+        {
+          "doc_count": 4,
+          "key": "Kepler"
+        },
+        {
+          "doc_count": 4,
+          "key": "Probabilistic"
+        }
+      ],
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 517
+    },
+    "type": {
+      "buckets": [
+        {
+          "doc_count": 151,
+          "key": "software",
+          "subtype": {
+            "buckets": [],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 99,
+          "key": "publication",
+          "subtype": {
+            "buckets": [
+              {
+                "doc_count": 42,
+                "key": "article"
+              },
+              {
+                "doc_count": 29,
+                "key": "conferencepaper"
+              },
+              {
+                "doc_count": 6,
+                "key": "other"
+              },
+              {
+                "doc_count": 5,
+                "key": "report"
+              },
+              {
+                "doc_count": 5,
+                "key": "thesis"
+              },
+              {
+                "doc_count": 5,
+                "key": "workingpaper"
+              },
+              {
+                "doc_count": 4,
+                "key": "technicalnote"
+              },
+              {
+                "doc_count": 2,
+                "key": "preprint"
+              },
+              {
+                "doc_count": 1,
+                "key": "section"
+              }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 77,
+          "key": "dataset",
+          "subtype": {
+            "buckets": [],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 36,
+          "key": "presentation",
+          "subtype": {
+            "buckets": [],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 12,
+          "key": "poster",
+          "subtype": {
+            "buckets": [],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 3,
+          "key": "image",
+          "subtype": {
+            "buckets": [
+              {
+                "doc_count": 3,
+                "key": "figure"
+              }
+            ],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        },
+        {
+          "doc_count": 2,
+          "key": "other",
+          "subtype": {
+            "buckets": [],
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0
+          }
+        }
+      ],
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0
+    }
+  },
+  "hits": {
+    "hits": [
+      {
+        "conceptdoi": "10.5281/zenodo.822469",
+        "conceptrecid": "822469",
+        "created": "2017-07-03T18:29:26.565198+00:00",
+        "doi": "10.5281/zenodo.822470",
+        "files": [
+          {
+            "bucket": "a3f3dffd-f689-4264-ad02-b3fd902ca91a",
+            "checksum": "md5:0b03eb884ecf9d7f6aed82d8679c1c5b",
+            "key": "human.filtered.dat.zip",
+            "links": {
+              "self": "https://zenodo.org/api/files/a3f3dffd-f689-4264-ad02-b3fd902ca91a/human.filtered.dat.zip"
+            },
+            "size": 228019060,
+            "type": "zip"
+          }
+        ],
+        "id": 822470,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.822470.svg",
+          "bucket": "https://zenodo.org/api/files/a3f3dffd-f689-4264-ad02-b3fd902ca91a",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.822469.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.822469",
+          "doi": "https://doi.org/10.5281/zenodo.822470",
+          "html": "https://zenodo.org/record/822470",
+          "latest": "https://zenodo.org/api/records/822470",
+          "latest_html": "https://zenodo.org/record/822470",
+          "self": "https://zenodo.org/api/records/822470"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "communities": [
+            {
+              "id": "greenelab"
+            }
+          ],
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Wong, AK"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Park, CY"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Greene, CS"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Bongo, LA"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Guan, Y"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Troyanskaya, OG"
+            }
+          ],
+          "description": "<p>This is the filtered human functional network from the IMP webserver. It was downloaded from\u00a0http://imp.princeton.edu/download/.</p>",
+          "doi": "10.5281/zenodo.822470",
+          "keywords": [
+            "functional network",
+            "genomics"
+          ],
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2017-07-03",
+          "related_identifiers": [
+            {
+              "identifier": "10.1093/nar/gks458",
+              "relation": "isPartOf",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.822469",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "822470"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "822469"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "title": "IMP 1.0 Filtered Human Functional Network"
+        },
+        "owners": [
+          18151
+        ],
+        "revision": 5,
+        "stats": {
+          "downloads": 4.0,
+          "unique_downloads": 4.0,
+          "unique_views": 17.0,
+          "version_downloads": 4.0,
+          "version_unique_downloads": 4.0,
+          "version_unique_views": 17.0,
+          "version_views": 19.0,
+          "version_volume": 912076240.0,
+          "views": 19.0,
+          "volume": 912076240.0
+        },
+        "updated": "2020-01-21T07:22:52.288114+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3759698",
+        "conceptrecid": "3759698",
+        "created": "2020-04-21T17:45:39.890524+00:00",
+        "doi": "10.5281/zenodo.3759699",
+        "files": [
+          {
+            "bucket": "2078e3e1-b34d-4bb9-a5aa-5de7a35157c0",
+            "checksum": "md5:27adbc70472fcc782cb92337b25a92ba",
+            "key": "data.tsv.gz",
+            "links": {
+              "self": "https://zenodo.org/api/files/2078e3e1-b34d-4bb9-a5aa-5de7a35157c0/data.tsv.gz"
+            },
+            "size": 66396973,
+            "type": "gz"
+          }
+        ],
+        "id": 3759699,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3759699.svg",
+          "bucket": "https://zenodo.org/api/files/2078e3e1-b34d-4bb9-a5aa-5de7a35157c0",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3759698.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3759698",
+          "doi": "https://doi.org/10.5281/zenodo.3759699",
+          "html": "https://zenodo.org/record/3759699",
+          "latest": "https://zenodo.org/api/records/3759699",
+          "latest_html": "https://zenodo.org/record/3759699",
+          "self": "https://zenodo.org/api/records/3759699"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Cofer, Evan",
+              "orcid": "0000-0003-3877-0433"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Raimundo, Jo\u00e3o",
+              "orcid": "0000-0002-8976-1898"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Tadych, Alicja",
+              "orcid": "0000-0001-8645-0739"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Yamazaki, Yuji"
+            },
+            {
+              "affiliation": "Flatiron Institute",
+              "name": "Wong, Aaron",
+              "orcid": "0000-0002-7294-0646"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Theesfeld, Chandra",
+              "orcid": "0000-0002-8379-6600"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Levine, Michael"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Troyanskaya, Olga",
+              "orcid": "0000-0002-5676-5737"
+            }
+          ],
+          "description": "<p><strong>data.tsv.gz</strong>:&nbsp;The individual DeepArk binding predictions for dosage compensation complex&nbsp;components in <em>C. elegans</em>. Predictions are spaced every 200 bp along the entirety of the<em>&nbsp;</em>X chromosome of the ce11 genome assembly. Accession numbers correspond to training data corresponding to an individual output probability from&nbsp;DeepArk.</p>",
+          "doi": "10.5281/zenodo.3759699",
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2020-04-21",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.3759698",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3759699"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3759698"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "title": "DeepArk predictions for dosage compensation complex components on the C. elegans X chromosome",
+          "version": "0.0.0"
+        },
+        "owners": [
+          98868
+        ],
+        "revision": 2,
+        "stats": {
+          "downloads": 0.0,
+          "unique_downloads": 0.0,
+          "unique_views": 7.0,
+          "version_downloads": 0.0,
+          "version_unique_downloads": 0.0,
+          "version_unique_views": 7.0,
+          "version_views": 19.0,
+          "version_volume": 0.0,
+          "views": 19.0,
+          "volume": 0.0
+        },
+        "updated": "2020-04-21T20:20:18.382907+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3759735",
+        "conceptrecid": "3759735",
+        "created": "2020-04-21T18:33:09.967528+00:00",
+        "doi": "10.5281/zenodo.3759736",
+        "files": [
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:0848735786a07c834d61dbfdd4ac7eec",
+            "key": "1 - caggaag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/1%20-%20caggaag.mp4"
+            },
+            "size": 52048229,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:9dd949e1beb498b3a4f7917ae8ab9da2",
+            "key": "1 - caggcag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/1%20-%20caggcag.mp4"
+            },
+            "size": 66125626,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:49e65dc652d6d8b8d48003d7712a6d0d",
+            "key": "1 - caggtac.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/1%20-%20caggtac.mp4"
+            },
+            "size": 61784265,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:5c78d3e232fcaebe78818a828b706f59",
+            "key": "1 - caggtag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/1%20-%20caggtag.mp4"
+            },
+            "size": 104560690,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:bb83ab9b5d63007f50841efbfce8aaf6",
+            "key": "2 - caggaag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/2%20-%20caggaag.mp4"
+            },
+            "size": 83607535,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:ff19a8cf2131a0e739f76dcca1402d48",
+            "key": "2 - caggcag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/2%20-%20caggcag.mp4"
+            },
+            "size": 88593235,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:aa4af1ab2c8d7c93068494c0ec270171",
+            "key": "2 - caggtac.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/2%20-%20caggtac.mp4"
+            },
+            "size": 59962034,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:2e6ab15821094f5848372882ae89d71e",
+            "key": "2 - caggtag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/2%20-%20caggtag.mp4"
+            },
+            "size": 86634223,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:7b48f961783c935b70fe133be2e4affd",
+            "key": "3 - caggaag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/3%20-%20caggaag.mp4"
+            },
+            "size": 59509257,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:17b01eba9716bb66346c689c4d938338",
+            "key": "3 - caggcag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/3%20-%20caggcag.mp4"
+            },
+            "size": 88717556,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:4a64398ba4733a54ef120cd527e9c400",
+            "key": "3 - caggtac.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/3%20-%20caggtac.mp4"
+            },
+            "size": 95194075,
+            "type": "mp4"
+          },
+          {
+            "bucket": "d3d72223-4a17-4ec5-8855-93e883ea8edc",
+            "checksum": "md5:eb09a1802d2dfb5a918d71b64837d808",
+            "key": "3 - caggtag.mp4",
+            "links": {
+              "self": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc/3%20-%20caggtag.mp4"
+            },
+            "size": 77506277,
+            "type": "mp4"
+          }
+        ],
+        "id": 3759736,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3759736.svg",
+          "bucket": "https://zenodo.org/api/files/d3d72223-4a17-4ec5-8855-93e883ea8edc",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3759735.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3759735",
+          "doi": "https://doi.org/10.5281/zenodo.3759736",
+          "html": "https://zenodo.org/record/3759736",
+          "latest": "https://zenodo.org/api/records/3759736",
+          "latest_html": "https://zenodo.org/record/3759736",
+          "self": "https://zenodo.org/api/records/3759736"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Cofer, Evan",
+              "orcid": "0000-0003-3877-0433"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Raimundo, Jo\u00e3o",
+              "orcid": "0000-0002-8976-1898"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Tadych, Alicja",
+              "orcid": "0000-0001-8645-0739"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Yamazaki, Yuji"
+            },
+            {
+              "affiliation": "Flatiron Institute",
+              "name": "Wong, Aaron",
+              "orcid": "0000-0002-7294-0646"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Theesfeld, Chandra",
+              "orcid": "0000-0002-8379-6600"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Levine, Michael"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Troyanskaya, Olga",
+              "orcid": "0000-0002-5676-5737"
+            }
+          ],
+          "description": "<p>Videos showing live imaging of&nbsp;transcription of T48&nbsp;(green) at the start of nuclear cycle 14 in developing embryos of <em>Drosophila melanogaster</em>. Video names indicate&nbsp;the enhancer allele used, and the number in the name indicates the replicate number.</p>",
+          "doi": "10.5281/zenodo.3759736",
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2020-04-21",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.3759735",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3759736"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3759735"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "title": "Videos of live transcription of T48 in D. melanogaster during nuclear cycle 14",
+          "version": "0.0.0"
+        },
+        "owners": [
+          98868
+        ],
+        "revision": 2,
+        "stats": {
+          "downloads": 1.0,
+          "unique_downloads": 1.0,
+          "unique_views": 9.0,
+          "version_downloads": 1.0,
+          "version_unique_downloads": 1.0,
+          "version_unique_views": 9.0,
+          "version_views": 12.0,
+          "version_volume": 52048229.0,
+          "views": 12.0,
+          "volume": 52048229.0
+        },
+        "updated": "2020-04-21T20:20:18.384107+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3374002",
+        "conceptrecid": "3374002",
+        "created": "2019-09-27T17:31:33.247654+00:00",
+        "doi": "10.5281/zenodo.3374003",
+        "files": [
+          {
+            "bucket": "7d785d1d-f1b7-4715-8b11-1551b474901b",
+            "checksum": "md5:319fccad56995510a0dfed74767a404f",
+            "key": "CDH AR 2018-19_9.26.19.pdf",
+            "links": {
+              "self": "https://zenodo.org/api/files/7d785d1d-f1b7-4715-8b11-1551b474901b/CDH%20AR%202018-19_9.26.19.pdf"
+            },
+            "size": 5557726,
+            "type": "pdf"
+          }
+        ],
+        "id": 3374003,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3374003.svg",
+          "bucket": "https://zenodo.org/api/files/7d785d1d-f1b7-4715-8b11-1551b474901b",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3374002.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3374002",
+          "doi": "https://doi.org/10.5281/zenodo.3374003",
+          "html": "https://zenodo.org/record/3374003",
+          "latest": "https://zenodo.org/api/records/3374003",
+          "latest_html": "https://zenodo.org/record/3374003",
+          "self": "https://zenodo.org/api/records/3374003"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "contributors": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Munson, Rebecca",
+              "orcid": "0000-0002-8735-8405",
+              "type": "Editor"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Roth, Suzanne",
+              "type": "ProjectMember"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Valenza, Barbara",
+              "type": "ProjectMember"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Szwast, Shelley",
+              "type": "ProjectMember"
+            },
+            {
+              "name": "Bauer, Jean",
+              "orcid": "0000-0002-4026-740X",
+              "type": "ProjectMember"
+            },
+            {
+              "name": "Bendyna, Nanette",
+              "type": "ProjectMember"
+            }
+          ],
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Wythoff, Grant",
+              "orcid": "0000-0002-6605-9596"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Martin, Meredith",
+              "orcid": "0000-0003-0214-8757"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Ermolaev, Natalia"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Munson, Rebecca",
+              "orcid": "0000-0002-8735-8405"
+            },
+            {
+              "affiliation": "uneticdesign.com",
+              "name": "Unetic, Phillip"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Doroudian, Gissoo",
+              "orcid": "0000-0002-6702-6964"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Patterson, Tracy"
+            }
+          ],
+          "description": "<p>What does it mean to treat poetry, brain scans, and library borrowing records alike as &ldquo;data&rdquo;? Today, we analyze rich and complicated data produced in the humanities at scale with computational tools such as Natural Language Processing, network analysis, and machine learning. Likewise, data scientists rely on humanists for political and historical context that helps make their work more equitable and just. During 2018-19, the Center for Digital Humanities (CDH) dedicated its energies to bringing various disciplinary voices at Princeton together to examine how data is transforming our academic fields and our society. We called this initiative &ldquo;Year of Data,&rdquo; and held over twenty events - lectures, symposia, conferences, workshops - with campus partners in the humanities, arts, data and computer science, social science, and library and archives.</p>",
+          "doi": "10.5281/zenodo.3374003",
+          "imprint": {
+            "place": "Princeton, NJ",
+            "publisher": "Center for Digital Humanities at Princeton"
+          },
+          "keywords": [
+            "Annual Report",
+            "Digital Humanities"
+          ],
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2019-09-23",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.3374002",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3374003"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3374002"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "subtype": "report",
+            "title": "Report",
+            "type": "publication"
+          },
+          "title": "Annual Report 2018-2019: Cultivating Princeton's Data Landscape"
+        },
+        "owners": [
+          75075
+        ],
+        "revision": 4,
+        "stats": {
+          "downloads": 246.0,
+          "unique_downloads": 204.0,
+          "unique_views": 391.0,
+          "version_downloads": 246.0,
+          "version_unique_downloads": 204.0,
+          "version_unique_views": 391.0,
+          "version_views": 412.0,
+          "version_volume": 1367200596.0,
+          "views": 412.0,
+          "volume": 1367200596.0
+        },
+        "updated": "2020-01-20T17:40:29.952761+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3831514",
+        "conceptrecid": "3831514",
+        "created": "2020-05-18T01:34:59.569201+00:00",
+        "doi": "10.5281/zenodo.3831515",
+        "id": 3831515,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3831515.svg",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3831514.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3831514",
+          "doi": "https://doi.org/10.5281/zenodo.3831515",
+          "html": "https://zenodo.org/record/3831515",
+          "latest": "https://zenodo.org/api/records/3831515",
+          "latest_html": "https://zenodo.org/record/3831515",
+          "self": "https://zenodo.org/api/records/3831515"
+        },
+        "metadata": {
+          "access_right": "embargoed",
+          "access_right_category": "warning",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Zajdel, Tom"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Shim, Gawoon"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Wang, Linus"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Martinez, Alejandro"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Cohen, Daniel J"
+            }
+          ],
+          "description": "<p>Key materials for replicating the work of Zajdel, Shim, Wang, Martinez, and Cohen in &quot;SCHEEPDOG: programming electric cues to dynamically herd large-scale cell migration&quot;</p>\n\n<p>Current status: pending at Cell Systems.</p>\n\n<p>bioRxiv submission:&nbsp;<a href=\"https://www.biorxiv.org/content/10.1101/2019.12.20.884510v2.full\">https://www.biorxiv.org/content/10.1101/2019.12.20.884510v2.full</a></p>",
+          "doi": "10.5281/zenodo.3831515",
+          "embargo_date": "2020-06-26",
+          "journal": {
+            "title": "Cell Systems"
+          },
+          "keywords": [
+            "bioelectricity, cell migration, bioengineering"
+          ],
+          "license": {
+            "id": "other-open"
+          },
+          "publication_date": "2020-05-18",
+          "related_identifiers": [
+            {
+              "identifier": "https://github.com/CohenLabPrinceton/SCHEEPDOG/tree/v1.0.0",
+              "relation": "isSupplementTo",
+              "scheme": "url"
+            },
+            {
+              "identifier": "10.5281/zenodo.3831514",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3831515"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3831514"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "subtype": "article",
+            "title": "Journal article",
+            "type": "publication"
+          },
+          "title": "CohenLabPrinceton/SCHEEPDOG: SCHEEPDOG Materials",
+          "version": "v1.0.0"
+        },
+        "owners": [
+          100611
+        ],
+        "revision": 3,
+        "stats": {
+          "downloads": 0.0,
+          "unique_downloads": 0.0,
+          "unique_views": 5.0,
+          "version_downloads": 0.0,
+          "version_unique_downloads": 0.0,
+          "version_unique_views": 5.0,
+          "version_views": 7.0,
+          "version_volume": 0.0,
+          "views": 7.0,
+          "volume": 0.0
+        },
+        "updated": "2020-05-18T01:39:42.893568+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.1299971",
+        "conceptrecid": "1299971",
+        "created": "2018-10-09T20:01:28.193805+00:00",
+        "doi": "10.5281/zenodo.1453447",
+        "files": [
+          {
+            "bucket": "fff79361-e73c-4dc4-8871-4a8477f1206a",
+            "checksum": "md5:facad11f6a588fdeeea0251f81529cd7",
+            "key": "Princeton-CDH/derrida-django-1.2.zip",
+            "links": {
+              "self": "https://zenodo.org/api/files/fff79361-e73c-4dc4-8871-4a8477f1206a/Princeton-CDH/derrida-django-1.2.zip"
+            },
+            "size": 73662414,
+            "type": "zip"
+          }
+        ],
+        "id": 1453447,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1453447.svg",
+          "bucket": "https://zenodo.org/api/files/fff79361-e73c-4dc4-8871-4a8477f1206a",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1299971.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.1299971",
+          "doi": "https://doi.org/10.5281/zenodo.1453447",
+          "html": "https://zenodo.org/record/1453447",
+          "latest": "https://zenodo.org/api/records/1453447",
+          "latest_html": "https://zenodo.org/record/1453447",
+          "self": "https://zenodo.org/api/records/1453447"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "contributors": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Chenoweth, Katie",
+              "type": "Editor"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Baron-Raiffe, Alexander",
+              "type": "Editor"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Munson, Rebecca",
+              "orcid": "0000-0002-8735-8405",
+              "type": "Editor"
+            }
+          ],
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Koeser, Rebecca Sutton",
+              "orcid": "0000-0002-8762-8057"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Hicks, Benjamin W.",
+              "orcid": "0000-0002-9973-560X"
+            },
+            {
+              "name": "Glover, Kevin"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Budak, Nick",
+              "orcid": "0000-0002-4542-0899"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Li, Xinyi",
+              "orcid": "0000-0002-6114-3182"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Bauer, Jean",
+              "orcid": "0000-0002-4026-740X"
+            }
+          ],
+          "description": "<p>Version 1.2 adds the capability export data from the project database as CSV, JSON, and a Zotero library for data that can be deposited for citation and reuse.</p>\n\n<p>This release also includes a number of fixes to address bugs, design implementation issues, and accessibility issues.</p>",
+          "doi": "10.5281/zenodo.1453447",
+          "license": {
+            "id": "Apache-2.0"
+          },
+          "publication_date": "2018-10-09",
+          "related_identifiers": [
+            {
+              "identifier": "https://github.com/Princeton-CDH/derrida-django/tree/1.2",
+              "relation": "isSupplementTo",
+              "scheme": "url"
+            },
+            {
+              "identifier": "https://derridas-margins.princeton.edu/",
+              "relation": "compiles",
+              "scheme": "url"
+            },
+            {
+              "identifier": "10.5281/zenodo.1299971",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 2,
+                "index": 1,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "1453447"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "1299971"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "title": "Princeton-CDH/derrida-django: v1.2 Data exports and other improvements and fixes",
+          "version": "1.2"
+        },
+        "owners": [
+          20115
+        ],
+        "revision": 10,
+        "stats": {
+          "downloads": 8.0,
+          "unique_downloads": 7.0,
+          "unique_views": 70.0,
+          "version_downloads": 10.0,
+          "version_unique_downloads": 9.0,
+          "version_unique_views": 105.0,
+          "version_views": 133.0,
+          "version_volume": 735385158.0,
+          "views": 81.0,
+          "volume": 589299312.0
+        },
+        "updated": "2020-01-25T07:26:54.380259+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3359177",
+        "conceptrecid": "3359177",
+        "created": "2019-08-12T20:02:43.608577+00:00",
+        "doi": "10.5281/zenodo.3359178",
+        "files": [
+          {
+            "bucket": "3ca68979-26c2-4c5c-8cd0-06d04ed82a82",
+            "checksum": "md5:29047977f2bb15d45f3cd3dbae66bd17",
+            "key": "CDH_PEMM_Charter_2019.pdf",
+            "links": {
+              "self": "https://zenodo.org/api/files/3ca68979-26c2-4c5c-8cd0-06d04ed82a82/CDH_PEMM_Charter_2019.pdf"
+            },
+            "size": 1280964,
+            "type": "pdf"
+          }
+        ],
+        "id": 3359178,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3359178.svg",
+          "bucket": "https://zenodo.org/api/files/3ca68979-26c2-4c5c-8cd0-06d04ed82a82",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3359177.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3359177",
+          "doi": "https://doi.org/10.5281/zenodo.3359178",
+          "html": "https://zenodo.org/record/3359178",
+          "latest": "https://zenodo.org/api/records/3359178",
+          "latest_html": "https://zenodo.org/record/3359178",
+          "self": "https://zenodo.org/api/records/3359178"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Belcher, Wendy Laura",
+              "orcid": "0000-0003-1734-4136"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Koeser, Rebecca Sutton",
+              "orcid": "0000-0002-8762-8057"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Munson, Rebecca",
+              "orcid": "0000-0002-8735-8405"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Doroudian, Gissoo",
+              "orcid": "0000-0002-6702-6964"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Martin, Meredith",
+              "orcid": "0000-0003-0214-8757"
+            }
+          ],
+          "description": "<p>Project charter for <a href=\"https://cdh.princeton.edu/projects/ethiopian-miracles-mary-project/\">CDH research collaboration project Princeton Ethiopian Miracles of Mary</a></p>\n\n<p>The charter is the foundational document that describes the rationale, goals, plan of work, resources needed, terms and conditions, and outcomes of a Center for Digital Humanities at Princeton (hereafter CDH) project. Charters are written by core members of a project team in a series of planning meetings taking place over the course of a month. The planning process is intensive, collaborative and requires substantial input from everyone on a team. Charters serve as formalized agreements among all team members on such crucial questions as scope, technical design, infrastructural needs, and success criteria.</p>\n\n<p>A draft of each project charter is peer-reviewed by all CDH staff, and optionally by additional partners or stakeholders, at a &ldquo;design review&rdquo; before the start of project work. It is circulated at least one week before the review takes place in an open comment period. Questions and concerns from this period may be raised at the design review. Project teams have two weeks after the design review to address any issues raised and make any requested changes. Project work only begins (and funds are released) once the charter has been finalized and signed by the Project Director (PI) and the CDH Faculty Director. Charters are amended as necessary throughout the project lifecycle to document major changes and note when &ldquo;Built by CDH&rdquo; Software Warranty and &ldquo;Built by CDH&rdquo; Long Term Service Agreement take effect, and serve as part of the CDH project archive.</p>\n\n<p>CDH charters and their planning documents exist in several forms as we have refined them over the years and tailored them to the several types of projects we have supported. For more about CDH project management, including the charter process, visit: <a href=\"https://cdh.princeton.edu/research/project-management/\">https://cdh.princeton.edu/research/project-management/</a></p>\n\n<p>Cite this document:</p>\n\n<p>Belcher, Wendy Laura, Rebecca Sutton Koeser, Rebecca Munson, Gissoo Doroudian, and Meredith Martin. <em>CDH Project Charter &mdash; Princeton Ethiopian Miracles of Mary 2019-20</em>. Center for Digital Humanities at Princeton. 2019. http://doi.org/10.5281/zenodo.3359178</p>",
+          "doi": "10.5281/zenodo.3359178",
+          "imprint": {
+            "publisher": "Center for Digital Humanities at Princeton"
+          },
+          "keywords": [
+            "project charter"
+          ],
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2019-08-02",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.3359177",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3359178"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3359177"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "subtype": "workingpaper",
+            "title": "Working paper",
+            "type": "publication"
+          },
+          "title": "CDH Project Charter \u2013 Princeton Ethiopian Miracles of Mary 2019-20"
+        },
+        "owners": [
+          20115
+        ],
+        "revision": 5,
+        "stats": {
+          "downloads": 217.0,
+          "unique_downloads": 202.0,
+          "unique_views": 319.0,
+          "version_downloads": 217.0,
+          "version_unique_downloads": 202.0,
+          "version_unique_views": 319.0,
+          "version_views": 351.0,
+          "version_volume": 277969188.0,
+          "views": 351.0,
+          "volume": 277969188.0
+        },
+        "updated": "2020-01-20T16:49:50.701013+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.3727774",
+        "conceptrecid": "3727774",
+        "created": "2020-03-27T15:49:37.119762+00:00",
+        "doi": "10.5281/zenodo.3727775",
+        "files": [
+          {
+            "bucket": "8a51aec3-6870-488b-85b3-bcfdf4715295",
+            "checksum": "md5:f024d00303657ad16449212902d07f9e",
+            "key": "sample_output.tar.gz",
+            "links": {
+              "self": "https://zenodo.org/api/files/8a51aec3-6870-488b-85b3-bcfdf4715295/sample_output.tar.gz"
+            },
+            "size": 14967736779,
+            "type": "gz"
+          }
+        ],
+        "id": 3727775,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.3727775.svg",
+          "bucket": "https://zenodo.org/api/files/8a51aec3-6870-488b-85b3-bcfdf4715295",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.3727774.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.3727774",
+          "doi": "https://doi.org/10.5281/zenodo.3727775",
+          "html": "https://zenodo.org/record/3727775",
+          "latest": "https://zenodo.org/api/records/3727775",
+          "latest_html": "https://zenodo.org/record/3727775",
+          "self": "https://zenodo.org/api/records/3727775"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Elizabeth A. McDevitt",
+              "orcid": "0000-0001-9112-3775"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Anne C. Mennen",
+              "orcid": "0000-0003-0007-7473"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Paula P. Brooks",
+              "orcid": "0000-0002-3245-562X"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Samuel A. Nastase",
+              "orcid": "0000-0001-7013-5275"
+            }
+          ],
+          "description": "<p>This archive contains sample output files for the <a href=\"http://doi.org/10.5281/zenodo.3677090\">sample data</a> accompanying the <a href=\"https://brainhack-princeton.github.io/handbook/\">Princeton Handbook for Reproducible Neuroimaging</a>. Outputs include the NIfTI images converted using <a href=\"https://github.com/nipy/heudiconv\">HeuDiConv</a> (v0.5.dev1) and organized according to the <a href=\"https://bids.neuroimaging.io/\">BIDS</a> standard, quality control evaluation using <a href=\"https://mriqc.readthedocs.io/\">MRIQC</a> (v0.10.4), data preprocessed using <a href=\"https://fmriprep.readthedocs.io/en/stable/\">fMRIPrep</a> (v1.4.1rc1), and other auxiliary files. All outputs were created according to the procedures outlined in the handbook, and are intended to serve as a didactic reference for use with the handbook. The sample data from which the outputs are derived were acquired (with informed consent) using the<a href=\"https://github.com/ReproNim/reproin\"> ReproIn</a> naming convention on a Siemens Skyra 3T MRI scanner. The sample data include a T1-weighted anatomical image, four functional runs with the &ldquo;prettymouth&rdquo; spoken story stimulus, and one functional run with a block design emotional faces task, as well as auxiliary scans (e.g., scout, soundcheck). The &ldquo;prettymouth&rdquo; story stimulus created by <a href=\"https://doi.org/10.1177%2F0956797616682029\">Yeshurun et al., 2017</a> and is available as part of the<a href=\"https://openneuro.org/datasets/ds002345\"> Narratives</a> collection, and the emotional faces task is similar to<a href=\"https://doi.org/10.1016/j.nicl.2015.05.004\"> Chai et al., 2015</a>. The brain data are contributed by author S.A.N. and are authorized for non-anonymized distribution.</p>",
+          "doi": "10.5281/zenodo.3727775",
+          "keywords": [
+            "BIDS",
+            "fMRI",
+            "fMRIPrep",
+            "FreeSurfer",
+            "HeuDiConv",
+            "MRIQC",
+            "open data",
+            "reproducibility",
+            "ReproIn"
+          ],
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2020-03-26",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.3688788",
+              "relation": "isSupplementTo",
+              "resource_type": "publication-book",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.3677090",
+              "relation": "isDerivedFrom",
+              "resource_type": "dataset",
+              "scheme": "doi"
+            },
+            {
+              "identifier": "10.5281/zenodo.3727774",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "3727775"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "3727774"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "title": "Princeton Handbook for Reproducible Neuroimaging: Sample Output",
+          "version": "1.0.0"
+        },
+        "owners": [
+          91631
+        ],
+        "revision": 3,
+        "stats": {
+          "downloads": 1.0,
+          "unique_downloads": 1.0,
+          "unique_views": 12.0,
+          "version_downloads": 1.0,
+          "version_unique_downloads": 1.0,
+          "version_unique_views": 12.0,
+          "version_views": 15.0,
+          "version_volume": 14967736779.0,
+          "views": 15.0,
+          "volume": 14967736779.0
+        },
+        "updated": "2020-03-28T08:20:18.676121+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.1157147",
+        "conceptrecid": "1157147",
+        "created": "2018-01-22T19:14:26.792449+00:00",
+        "doi": "10.5281/zenodo.1157148",
+        "files": [
+          {
+            "bucket": "34adbb2b-c47d-4dbf-bf40-9c68cf202774",
+            "checksum": "md5:debb0531eaf84197dfaef00e559c0b9a",
+            "key": "ASvyatkovskiy/ScaBillMatch-v1.0.zip",
+            "links": {
+              "self": "https://zenodo.org/api/files/34adbb2b-c47d-4dbf-bf40-9c68cf202774/ASvyatkovskiy/ScaBillMatch-v1.0.zip"
+            },
+            "size": 6438111,
+            "type": "zip"
+          }
+        ],
+        "id": 1157148,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.1157148.svg",
+          "bucket": "https://zenodo.org/api/files/34adbb2b-c47d-4dbf-bf40-9c68cf202774",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1157147.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.1157147",
+          "doi": "https://doi.org/10.5281/zenodo.1157148",
+          "html": "https://zenodo.org/record/1157148",
+          "latest": "https://zenodo.org/api/records/1157148",
+          "latest_html": "https://zenodo.org/record/1157148",
+          "self": "https://zenodo.org/api/records/1157148"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Alexey Svyatkovskiy"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Yuki Shiraito"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Mary Kroeger"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Kosuke Imai"
+            }
+          ],
+          "description": "<p>Scala-based framework implementing a set of classes for feature extraction, all pairs similarity join and graph analysis. The main application domain is the policy diffusion detection in the US legislature.</p>\n\n<p>Policy diffusion occurs when government decisions in a given jurisdiction are systematically influenced by prior policy choices made in other jurisdictions. While policy diffusion can manifest in a variety of forms, we focus on a type of policy diffusion that can be detected by examining similarity of legislative bill texts. We aim to identify groups of legislative bills from different states falling into the same diffusion topic, to perform an all-pairs comparison between the bills within each topic, and to identify paths connecting specific legislative proposals on a graph.</p>\n\n<p>Data ingestion</p>\n\n<p>During ingestion step the raw unstructured data are converted into JSON and, subsequently, Apache Avro format having following schema:</p>\n\n<pre><code>{\"namespace\" : \"bills.avro\" ,\n   \"type\": \"record\",\n   \"name\": \"Bills\",\n   \"fields\": [\n      {\"name\": \"primary_key\" , \"type\": \"string\"},\n      {\"name\": \"content\" , \"type\" : \"string\"}\n      {\"name\": \"year\" , \"type\" : \"int\"},\n      {\"name\": \"state\" , \"type\" : \"int\"},\n      {\"name\": \"docversion\" , \"type\" : \"string\"}\n      ]\n}\n</code></pre>\n\n<p>where the <code>primary_key</code> field is a unique identifier of the elements in the dataset constructed from year, state and document version. The year, state and docversion fields are used to construct predicates and filter the data before the allpairs similarity join calculation. The <code>content</code> field stores the entire legislative proposal as a unicode string. It is only used for feature extraction step, and is not read into memory during candidate selection and filtering steps, thanks to the Avro schema evolution property.</p>\n\n<p>Avro schema is stored in a file along with the data. Thus, if the program reading the data expects a different schema this can be easily resolved by setting the <code>avro.input.schema.key</code> in the Spark application, since the schemas of Avro writer and reader are both present.</p>\n\n<p>The data ingestion steps would differ depending on the dataset structure/type.</p>\n\n<p>Pre-processing and feature extraction</p>\n\n<p>The feature extraction step consists of a sequence of <code>Spark ML</code> transformers intended to produce numerical feature vectors as a dataframe column. The resulting dataframe is fed to Spark ML k-means estimator, later used to calculate the all-pairs join, and subsequently during the graph analysis step with <code>GraphFrames</code>.</p>\n\n<p>Types of features</p>\n\n<ol>\n\t<li>Bag-of-words and the N-gram</li>\n\t<li>Term frequency and inverse document frequency (TF-IDF)</li>\n\t<li>Minhash features</li>\n</ol>\n\n<p>Different types of text features has been found to perform better for each type of simialrity measures. For instance, TF-IDF (small granularity N gram) +truncated SVD is best suited for cosine similarity calcualtions. Jaccard similarity perofrms best with unweighted features (i.e. MinHash or TF), larger N gram granularity is preferred for the latter.</p>\n\n<p>Dimension reduction</p>\n\n<p>Singular value decomposition (SVD) is applied to the TF-IDF document-feature matrix to extract concepts which are most relevant for classification.</p>\n\n<p>Candidate selection and clustering</p>\n\n<p>Focusing on the document vectors which are likely to be highly similar is essential for all-pairs comparison at scale. Modern studies employ variations of nearest-neighbor search, locality sensitive hashing, as well as sampling techniques to select a subset of rows of TF-IDF matrix based on the sparsity [DIMSUM]. Our approach currently utilizes k-means clustering to identify groups of documents which are likely to belong to the same diffusion topic, reducing the number of comparisons in the all-pairs similarity join calculation. In addition, <code>LSH</code> and <code>BucketedrandomProjectionLSH</code> are being added based on <code>Spark ML</code> implementation.</p>\n\n<p>Document similarity calculation</p>\n\n<p>We consider Jaccard, Cosine, manhattan and Hamming distances. We convert those to similarities assuming inverse proportionality, and re-scale all similarities to a common range, adding an extra additive term in the denominator serves as a regularization parameter for the case of identical vectors.</p>\n\n<p>Exploratory analysis: histogramming and plotting</p>\n\n<p>Histogrammar [<a href=\"http://histogrammar.org/docs/\">http://histogrammar.org/docs/</a>] is a suite of data aggregation primitives for making histograms, calculating descriptive statistics and plotting. A few composable functions can generate many different types of plots, and these functions are reimplemented in multiple languages and serialized to JSON for cross-platform compatibility. Histogrammar allows to aggregate data using cross-platform, functional primitives, summarizing a large dataset with discretized distributions, using lambda functions and composition rather than a restrictive set of histogram types.</p>\n\n<p>To use Histogrammar in the Spark shell, you don&#39;t have to download anything. Just start Spark with</p>\n\n<pre><code>spark-shell --packages \"org.diana-hep:histogrammar_2.11:1.0.4\"\n</code></pre>\n\n<p>and call</p>\n\n<pre><code>import org.dianahep.histogrammar._\n</code></pre>\n\n<p>on the Spark prompt. For plotting with Bokeh, <code>include org.diana-hep:histogrammar-bokeh_2.11:1.0.4</code> and for interaction with Spark-SQL, include <code>org.diana-hep:histogrammar-sparksql_2.11:1.0.4</code>.</p>\n\n<p>Reformulating the problem as a network (graph) problem</p>\n\n<p>Some policy diffusion questions are easier answered if the problem is formulated as a graph analysis problem. The dataframe output of the document similarity step is mapped onto a weighted undirected graph, considering each unique legislative proposal as a node and a presence of a document with similarity above a certain threshold as an edge with a weight attribute equal to the similarity.</p>\n\n<p>The PageRank and Dijkstra minimum cost path algorithms are applied to detect events of policy diffusion and the most influential states. A GraphFrame is constructed using two dataframes (a dataframe of nodes and an edge dataframe), allowing to easily integrate the graph processing step into the pipeline along with Spark ML, without a need to move the results of previous steps manually and feeding them to the graph processing module from an intermediate sink, like with isolated graph analysis systems.</p>",
+          "doi": "10.5281/zenodo.1157148",
+          "keywords": [
+            "policy diffusion, apache-spark, clustering, similarity join"
+          ],
+          "license": {
+            "id": "Apache-2.0"
+          },
+          "publication_date": "2018-01-22",
+          "related_identifiers": [
+            {
+              "identifier": "https://github.com/ASvyatkovskiy/ScaBillMatch/tree/v1.0",
+              "relation": "isSupplementTo",
+              "scheme": "url"
+            },
+            {
+              "identifier": "10.5281/zenodo.1157147",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 1,
+                "index": 0,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "1157148"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "1157147"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "title": "ASvyatkovskiy/ScaBillMatch: Publication ready",
+          "version": "v1.0"
+        },
+        "owners": [
+          31340
+        ],
+        "revision": 6,
+        "stats": {
+          "downloads": 3.0,
+          "unique_downloads": 2.0,
+          "unique_views": 44.0,
+          "version_downloads": 3.0,
+          "version_unique_downloads": 2.0,
+          "version_unique_views": 44.0,
+          "version_views": 44.0,
+          "version_volume": 19314333.0,
+          "views": 44.0,
+          "volume": 19314333.0
+        },
+        "updated": "2020-01-25T19:21:52.244336+00:00"
+      },
+      {
+        "conceptdoi": "10.5281/zenodo.1469708",
+        "conceptrecid": "1469708",
+        "created": "2018-12-12T00:10:13.519953+00:00",
+        "doi": "10.5281/zenodo.2220532",
+        "files": [
+          {
+            "bucket": "85670503-9097-4533-8ab6-2dbd4e72b223",
+            "checksum": "md5:b4b10e289708bca2091795b9a65a71d9",
+            "key": "mmRR1_lc.csv",
+            "links": {
+              "self": "https://zenodo.org/api/files/85670503-9097-4533-8ab6-2dbd4e72b223/mmRR1_lc.csv"
+            },
+            "size": 189551,
+            "type": "csv"
+          },
+          {
+            "bucket": "85670503-9097-4533-8ab6-2dbd4e72b223",
+            "checksum": "md5:acba2a5d6c6ca0e6d6038f20294400da",
+            "key": "mmRR2_lc.csv",
+            "links": {
+              "self": "https://zenodo.org/api/files/85670503-9097-4533-8ab6-2dbd4e72b223/mmRR2_lc.csv"
+            },
+            "size": 189507,
+            "type": "csv"
+          },
+          {
+            "bucket": "85670503-9097-4533-8ab6-2dbd4e72b223",
+            "checksum": "md5:a91fa509f35c164f53cb590aa39ef3cc",
+            "key": "README",
+            "links": {
+              "self": "https://zenodo.org/api/files/85670503-9097-4533-8ab6-2dbd4e72b223/README"
+            },
+            "size": 2216,
+            "type": ""
+          }
+        ],
+        "id": 2220532,
+        "links": {
+          "badge": "https://zenodo.org/badge/doi/10.5281/zenodo.2220532.svg",
+          "bucket": "https://zenodo.org/api/files/85670503-9097-4533-8ab6-2dbd4e72b223",
+          "conceptbadge": "https://zenodo.org/badge/doi/10.5281/zenodo.1469708.svg",
+          "conceptdoi": "https://doi.org/10.5281/zenodo.1469708",
+          "doi": "https://doi.org/10.5281/zenodo.2220532",
+          "html": "https://zenodo.org/record/2220532",
+          "latest": "https://zenodo.org/api/records/2220532",
+          "latest_html": "https://zenodo.org/record/2220532",
+          "self": "https://zenodo.org/api/records/2220532"
+        },
+        "metadata": {
+          "access_right": "open",
+          "access_right_category": "success",
+          "creators": [
+            {
+              "affiliation": "Princeton University",
+              "name": "Wallace, Joshua",
+              "orcid": "0000-0001-6135-3086"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Hartman, Joel",
+              "orcid": "0000-0001-8732-6166"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Bakos, Gaspar",
+              "orcid": "0000-0001-7204-6727"
+            },
+            {
+              "affiliation": "Princeton University",
+              "name": "Bhatti, Waqas",
+              "orcid": "0000-0002-0628-0088"
+            }
+          ],
+          "description": "<p>Included are files with light curve (measured brightness over time) data, about 80 days&#39; worth, for three stars in the globular cluster M4 that exhibit millimagnitude level, RR Lyrae-like variability.&nbsp; The data are derived from images taken by NASA&#39;s Kepler/K2 mission.&nbsp; The enclosed README provides details on the data contained in the files.&nbsp; The variability shown by these stars has not been seen in similar kinds of stars before, and represents a new class of stellar variability as far as we have been able to determine.</p>",
+          "doi": "10.5281/zenodo.2220532",
+          "keywords": [
+            "light curve",
+            "mmRR",
+            "millimagnitude RR Lyrae",
+            "variable star"
+          ],
+          "language": "eng",
+          "license": {
+            "id": "CC-BY-4.0"
+          },
+          "publication_date": "2018-10-23",
+          "related_identifiers": [
+            {
+              "identifier": "10.5281/zenodo.1469708",
+              "relation": "isVersionOf",
+              "scheme": "doi"
+            }
+          ],
+          "relations": {
+            "version": [
+              {
+                "count": 3,
+                "index": 2,
+                "is_last": true,
+                "last_child": {
+                  "pid_type": "recid",
+                  "pid_value": "2220532"
+                },
+                "parent": {
+                  "pid_type": "recid",
+                  "pid_value": "1469708"
+                }
+              }
+            ]
+          },
+          "resource_type": {
+            "title": "Dataset",
+            "type": "dataset"
+          },
+          "title": "Light curves for M4 millimagnitude RR Lyrae (mmRR)",
+          "version": "3"
+        },
+        "owners": [
+          54422
+        ],
+        "revision": 12,
+        "stats": {
+          "downloads": 21.0,
+          "unique_downloads": 7.0,
+          "unique_views": 24.0,
+          "version_downloads": 71.0,
+          "version_unique_downloads": 35.0,
+          "version_unique_views": 79.0,
+          "version_views": 90.0,
+          "version_volume": 11397056.0,
+          "views": 26.0,
+          "volume": 3043720.0
+        },
+        "updated": "2020-01-21T07:22:05.489327+00:00"
+      }
+    ],
+    "total": 380
+  },
+  "links": {
+    "next": "https://zenodo.org/api/records/?sort=bestmatch&q=creators.affiliation%3APrinceton&page=38&size=10",
+    "self": "https://zenodo.org/api/records/?sort=bestmatch&q=creators.affiliation%3APrinceton&page=1&size=10"
+  }
+}

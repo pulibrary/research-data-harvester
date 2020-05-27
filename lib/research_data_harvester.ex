@@ -24,6 +24,11 @@ defmodule ResearchDataHarvester do
     |> Enum.map(fn record -> %{ identifier: record["identifier"] } end)
   end
 
+  def get_zenodo_records do
+    search_url = "https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton"
+    Zenodo.Harvester.get_zenodo_records(search_url)
+  end
+
   def get_dataverse_records(base_url, set) do
     OaiStream.oai_pages(base_url: base_url, set: set, metadata_prefix: "oai_datacite")
     |> Enum.flat_map(&parse_dataverse_records/1)

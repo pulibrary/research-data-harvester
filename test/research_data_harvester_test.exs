@@ -38,7 +38,6 @@ defmodule ResearchDataHarvesterTest do
   end
 
   describe "#get_dataverse_records" do
-
     def mock_dataverse_records("https://dataverse.harvard.edu/oai?verb=ListRecords&set=Princeton_Authored_Datasets&metadataPrefix=oai_datacite") do
       body = File.read!("test/fixtures/dataverse/dataverse_page_1.xml")
       {
