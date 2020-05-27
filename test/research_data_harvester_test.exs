@@ -37,55 +37,7 @@ defmodule ResearchDataHarvesterTest do
     end
   end
 
-  describe "#get_zenodo_records" do
-    def mock_zenodo_records("https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton") do
-      body = File.read!("test/fixtures/zenodo/zenodo_page_1.json")
-      {
-        :ok,
-        %HTTPoison.Response{
-          body: body,
-          status_code: 200
-        }
-      }
-    end
-
-    def mock_zenodo_records("https://zenodo.org/api/records/?sort=bestmatch&q=creators.affiliation%3APrinceton&page=38&size=10") do
-      body = File.read!("test/fixtures/zenodo/zenodo_page_38.json")
-      {
-        :ok,
-        %HTTPoison.Response{
-          body: body,
-          status_code: 200
-        }
-      }
-    end
-
-    test "returns parsed json of Princeton University records" do
-      output =
-        Mock.with_mock HTTPoison, get: &mock_zenodo_records/1 do
-          ResearchDataHarvester.get_zenodo_records()
-        end
-
-      assert length(output) == 20
-      assert(hd(output).identifier) == "doi:10.5281/zenodo.822470"
-    end
-
-    test "get field list" do
-      output =
-        Mock.with_mock HTTPoison, get: &mock_zenodo_records/1 do
-          ResearchDataHarvester.get_zenodo_fields()
-        end
-
-      assert Enum.member?(output, "conceptdoi")
-      assert Enum.member?(output, "links:badge")
-      assert Enum.member?(output, "metadata:access_right")
-      assert Enum.member?(output, "metadata:creators:affiliation")
-      assert Enum.member?(output, "metadata:keywords")
-    end
-  end
-
   describe "#get_dataverse_records" do
-
     def mock_dataverse_records("https://dataverse.harvard.edu/oai?verb=ListRecords&set=Princeton_Authored_Datasets&metadataPrefix=oai_datacite") do
       body = File.read!("test/fixtures/dataverse/dataverse_page_1.xml")
       {
