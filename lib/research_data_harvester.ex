@@ -37,22 +37,24 @@ defmodule ResearchDataHarvester do
     |> Enum.reduce(fields_list, fn m, acc -> acc ++ extract_fields(m) end)
   end
 
-  # extract fields form a single hit
-  def extract_fields(map) do
-    #first_keys = Map.keys(map)
-
-    map
-    |> Enum.reduce([], &nest_case/2)
-    #require IEx; IEx.pry
-    # may have a list of objects (creators), just an object (links), list of
-    # strings (keywords)
+  def extract_fields(value) when is_map(value) do
+    Map.keys(value)
+    |> Enum.flat_map(fn key -> extract_fields(key, value[key]) end)
   end
 
-  def nest_case(key, value) when is_list(value) do
-    first = hd(value)
+  def extract_fields(key, value) when is_map(value) do
+    Map.keys(value)
+    |> Enum.flat_map(fn x -> extract_fields(x, value[x]) end)
+    |> Enum.map(fn x -> "#{key}:#{x}" end)
   end
 
-  def get_nested_keys(map, key) do
+  def extract_fields(key, value) when is_list(value) do
+    value
+    |> Enum.flat_map(fn x -> extract_fields(key, x) end)
+  end
+
+  def extract_fields(key, value) do
+    [key]
   end
 
   def get_hits(zenodo_respose) do

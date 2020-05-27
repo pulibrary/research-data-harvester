@@ -76,8 +76,11 @@ defmodule ResearchDataHarvesterTest do
           ResearchDataHarvester.get_zenodo_fields()
         end
 
+      assert Enum.member?(output, "conceptdoi")
+      assert Enum.member?(output, "links:badge")
+      assert Enum.member?(output, "metadata:access_right")
       assert Enum.member?(output, "metadata:creators:affiliation")
-      # assert output == ["conceptdoi", "conceptrecid", "created", "doi", "files", "id", "links", "metadata:creators:affiliation", "metadata:creators:name" "owners", "revision", "stats", "updated"]
+      assert Enum.member?(output, "metadata:keywords")
     end
   end
 
