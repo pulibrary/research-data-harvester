@@ -31,9 +31,28 @@ defmodule ResearchDataHarvester do
     |> Enum.uniq
   end
 
+  # map is the whole page response body
   def accumulate_fields(map, fields_list) do
     get_hits(map)
-    |> Enum.reduce(fields_list, fn m, acc -> acc ++ Map.keys(m) end)
+    |> Enum.reduce(fields_list, fn m, acc -> acc ++ extract_fields(m) end)
+  end
+
+  # extract fields form a single hit
+  def extract_fields(map) do
+    #first_keys = Map.keys(map)
+
+    map
+    |> Enum.reduce([], &nest_case/2)
+    #require IEx; IEx.pry
+    # may have a list of objects (creators), just an object (links), list of
+    # strings (keywords)
+  end
+
+  def nest_case(key, value) when is_list(value) do
+    first = hd(value)
+  end
+
+  def get_nested_keys(map, key) do
   end
 
   def get_hits(zenodo_respose) do
