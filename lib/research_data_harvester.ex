@@ -24,6 +24,26 @@ defmodule ResearchDataHarvester do
     |> Enum.map(fn record -> %{ identifier: record["identifier"] } end)
   end
 
+  def get_zenodo_fields do
+    search_url = "https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton"
+    z_stream = ZenodoApiStream.response_pages(search_url: search_url)
+    field_list =
+      z_stream
+      |> Enum.flat_map_reduce([], &accumulate_fields/2)
+  end
+
+  def accumulate_fields(map, fields_list) do
+    hits = get_hits(map)
+    fields = hits
+    |> Enum.reduce(fields_list, fn m, acc -> acc ++ Map.keys(m) end)
+  end
+
+  def get_hits(zenodo_respose) do
+    zenodo_respose
+    |> Map.fetch!("hits")
+    |> Map.fetch!("hits")
+  end
+
   def get_zenodo_records do
     search_url = "https://zenodo.org/api/records/?q=creators.affiliation%3APrinceton"
     ZenodoApiStream.response_pages(search_url: search_url)

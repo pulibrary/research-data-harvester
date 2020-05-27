@@ -61,7 +61,6 @@ defmodule ResearchDataHarvesterTest do
     end
 
     test "returns parsed json of Princeton University records" do
-
       output =
         Mock.with_mock HTTPoison, get: &mock_zenodo_records/1 do
           ResearchDataHarvester.get_zenodo_records()
@@ -69,6 +68,15 @@ defmodule ResearchDataHarvesterTest do
 
       assert length(output) == 20
       assert(hd(output).identifier) == "doi:10.5281/zenodo.822470"
+    end
+
+    test "get field list" do
+      output =
+        Mock.with_mock HTTPoison, get: &mock_zenodo_records/1 do
+          ResearchDataHarvester.get_zenodo_fields()
+        end
+
+      assert output == ["doi", "license", "keywords"]
     end
   end
 
