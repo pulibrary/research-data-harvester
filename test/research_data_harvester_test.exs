@@ -29,7 +29,7 @@ defmodule ResearchDataHarvesterTest do
 
     test "returns parsed json of Princeton University records" do
       output =
-        Mock.with_mock HTTPoison, get!: &mock_dryad_records/3 do
+        Mock.with_mock HTTPoison, get: &mock_dryad_records/3 do
           ResearchDataHarvester.get_dryad_records()
         end
 
@@ -72,7 +72,7 @@ defmodule ResearchDataHarvesterTest do
       set = "Princeton_Authored_Datasets"
 
       output =
-        Mock.with_mock HTTPoison, get!: &mock_dataverse_records/1 do
+        Mock.with_mock HTTPoison, get: &mock_dataverse_records/1 do
           ResearchDataHarvester.get_dataverse_records(url, set)
         end
 

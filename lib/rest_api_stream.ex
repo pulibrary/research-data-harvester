@@ -18,7 +18,7 @@ defmodule RestApiStream do
     page_url = "#{base_url}#{path}"
     headers = [Accept: "application/json", "Content-Type": "application/json"]
     options = [ssl: [{:versions, [:"tlsv1.2"]}]]
-    {:ok, %{body: body}} = HTTPoison.get!(page_url, headers, options)
+    {:ok, %{body: body}} = HTTPoison.get(page_url, headers, options)
 
     json =
       body
