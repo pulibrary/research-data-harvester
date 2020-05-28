@@ -9,13 +9,13 @@ defmodule Zenodo do
       ZenodoApiStream.response_pages(search_url: search_url)
       |> Stream.flat_map(&get_hits/1)
       |> Stream.flat_map(&extract_fields/1)
-      |> Stream.uniq
-      |> Enum.to_list
+      |> Stream.uniq()
+      |> Enum.to_list()
     end
 
     defp parse_zenodo_records(body) do
       get_hits(body)
-      |> Stream.map(fn record -> %{ identifier: "doi:#{record["doi"]}" } end)
+      |> Stream.map(fn record -> %{identifier: "doi:#{record["doi"]}"} end)
     end
 
     defp extract_fields(value) when is_map(value) do
@@ -34,7 +34,7 @@ defmodule Zenodo do
       |> Stream.flat_map(fn x -> extract_fields(key, x) end)
     end
 
-    defp extract_fields(key, value) do
+    defp extract_fields(key, _value) do
       [key]
     end
 
