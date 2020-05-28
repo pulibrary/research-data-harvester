@@ -13,6 +13,7 @@ defmodule ResearchDataHarvester do
   def get_dryad_records do
     base_url = "https://datadryad.org"
     path = "/api/v2/datasets"
+
     RestApiStream.response_pages(base_url: base_url, path: path)
     |> Enum.flat_map(&parse_dryad_records/1)
   end
@@ -21,7 +22,7 @@ defmodule ResearchDataHarvester do
     body
     |> Map.fetch!("_embedded")
     |> Map.fetch!("stash:datasets")
-    |> Enum.map(fn record -> %{ identifier: record["identifier"] } end)
+    |> Enum.map(fn record -> %{identifier: record["identifier"]} end)
   end
 
   def get_zenodo_records do
