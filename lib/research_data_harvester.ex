@@ -40,7 +40,7 @@ defmodule ResearchDataHarvester do
     |> xmap(
       records: [
         ~x"//ListRecords/record"l,
-        identifier: ~x"//header/identifier/text()"
+        identifier: ~x"//header/identifier/text()"s
       ]
     )
     |> Map.get(:records)

@@ -38,7 +38,7 @@ defmodule ZenodoHarvesterTest do
         end
 
       assert length(output) == 20
-      assert(hd(output).identifier) == "doi:10.5281/zenodo.822470"
+      assert(hd(output).identifier == "doi:10.5281/zenodo.822470")
     end
   end
 

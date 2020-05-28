@@ -34,7 +34,7 @@ defmodule ResearchDataHarvesterTest do
         end
 
       assert length(output) == 12
-      assert(hd(output).identifier) == "doi:10.5061/dryad.7rh4625"
+      assert(hd(output).identifier == "doi:10.5061/dryad.7rh4625")
     end
   end
 
@@ -78,7 +78,7 @@ defmodule ResearchDataHarvesterTest do
 
       # get 2 pages
       assert length(output) == 144
-      assert(hd(output).identifier) == "doi:10.7910/DVN/0SQFGQ"
+      assert(hd(output).identifier == "doi:10.7910/DVN/0SQFGQ")
     end
   end
 end
