@@ -34,7 +34,7 @@ defmodule Zenodo do
       |> Stream.flat_map(fn x -> extract_fields(key, x) end)
     end
 
-    defp extract_fields(key, value) do
+    defp extract_fields(key, _value) do
       [key]
     end
 
