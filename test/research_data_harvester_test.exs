@@ -81,4 +81,50 @@ defmodule ResearchDataHarvesterTest do
       assert(hd(output).identifier == "doi:10.7910/DVN/0SQFGQ")
     end
   end
+
+  describe "#get_dimensions_records" do
+    def mock_dimensions_records(
+          _url,
+          "search datasets where research_orgs=\"grid.16750.35\" return datasets[all] limit 100 skip 0",
+          _headers,
+          _options
+        ) do
+      response_body = File.read!("test/fixtures/dimensions/dimensions_page_1.json")
+
+      {
+        :ok,
+        %HTTPoison.Response{
+          body: response_body,
+          status_code: 200
+        }
+      }
+    end
+
+    def mock_dimensions_records(
+          _url,
+          "search datasets where research_orgs=\"grid.16750.35\" return datasets[all] limit 100 skip 100",
+          _headers,
+          _options
+        ) do
+      response_body = File.read!("test/fixtures/dimensions/dimensions_page_2.json")
+
+      {
+        :ok,
+        %HTTPoison.Response{
+          body: response_body,
+          status_code: 200
+        }
+      }
+    end
+
+    test "returns parsed json of Princeton University records" do
+      output =
+        Mock.with_mock HTTPoison, post: &mock_dimensions_records/4 do
+          ResearchDataHarvester.get_dimensions_records()
+        end
+
+      assert length(output) == 100
+      assert(hd(output).identifier == "10.1594/pangaea.839454")
+    end
+  end
 end

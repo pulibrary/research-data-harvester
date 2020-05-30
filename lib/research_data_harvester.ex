@@ -45,4 +45,19 @@ defmodule ResearchDataHarvester do
     )
     |> Map.get(:records)
   end
+
+  def get_dimensions_records() do
+    base_url = "https://app.dimensions.ai/api/dsl.json"
+    token = System.get_env("TOKEN")
+    limit = 100
+
+    DimensionsApiStream.response_pages(base_url: base_url, token: token, limit: limit)
+    |> Enum.flat_map(&parse_dimensions_records/1)
+  end
+
+  def parse_dimensions_records(body) do
+    body
+    |> Map.fetch!("datasets")
+    |> Enum.map(fn record -> %{identifier: record["doi"]} end)
+  end
 end
