@@ -1,0 +1,12 @@
+{
+    "_stats": {
+        "total_count": 100,
+        "limit": 100,
+        "offset": 100
+    },
+    "_version": {
+        "release": "1.25",
+        "version": "1.25.0"
+    },
+    "datasets": []
+}
